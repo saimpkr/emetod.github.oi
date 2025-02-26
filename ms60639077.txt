@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Web sitesi kökündeki Microsoft 365 - konumu için etki alanı sahipliği doğrulama dosyası",
+  "Domain": "www.emetod.tr",
+  "Id": "679aa1ab-00aa-4f0a-87ff-4f171ae144b4"
+}

@@ -1,0 +1,49 @@
+﻿; 	Zone file about to be imported to Azure DNS.
+; 	Content of this file is re-organized and grouped by record types
+; 	Zone name: emetod.tr.
+; 	Date and time (UTC): Sun, 19 Jan 2025 15:13:38 GMT
+
+$TTL 3600
+$ORIGIN emetod.tr.
+
+; SOA Record
+@	 		IN	SOA	ns1-37.azure-dns.com.	azuredns-hostmaster.microsoft.com.	(
+	 	 	1	 ;serial
+	 	 	3600	 ;refresh
+	 	 	300	 ;retry
+	 	 	604800	 ;expire
+	 	 	300	 ;minimum ttl
+)
+
+; NS Records
+@	IN	NS	ns1-37.azure-dns.com.
+@	IN	NS	ns2-37.azure-dns.net.
+@	IN	NS	ns3-37.azure-dns.org.
+@	IN	NS	ns4-37.azure-dns.info.
+
+; MX Records
+mail	IN	MX	10	mail.emetod.tr.
+
+; A Records
+@	IN	A	210.10.10.01
+www	IN	A	10.10.10.01
+
+; AAAA Records
+
+; CNAME Records
+
+; PTR Records
+
+; TXT Records
+
+; SRV Records
+
+; CAA Records
+
+; DS Records
+
+; TLSA Records
+
+; Azure Alias Records
+
+; Azure TmLink Records
