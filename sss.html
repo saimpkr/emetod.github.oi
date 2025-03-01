@@ -115,8 +115,23 @@
 
 <!-- Eğitim Accordion starts -->
 <!-- <div class="m-4"> -->
-<div class="accordion" id="myAccordion">
 
+<ul materialize="collapsible" class="collapsible popout" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+</ul>
+
+<div class="accordion" id="myAccordion">
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="headingOne"> <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1.Eğitim tasarımlarınızı kurumsal taleplere uygun yapılandırıyor musunuz?</button> </h2>
             	<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
@@ -124,6 +139,7 @@
                 </div>
         </div>
 </div>
+
 <div class="accordion" id="myAccordion">
 	<div class="accordion-item">
         	<h2 class="accordion-header" id="headingTwo"> <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">2.Eğtimlerde oyunlara, dramalara yer veriyormusunuz?</button> </h2>
