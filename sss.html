@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
 <meta charset="utf-8">
 <title>Eğitim Mühendislik Enerji Tasarım Otomasyon Denetim</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://emetod.tr" />
-
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-<link href="https://github.com/saimpkr/emetod.github.oi/tree/main/css/bootstrap.min.css" rel="stylesheet" />
-<link href="https://github.com/saimpkr/emetod.github.oi/tree/main/css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
-<link href="https://github.com/saimpkr/emetod.github.oi/tree/main/css/flexslider.css" rel="stylesheet" /> 
-<link href="https://github.com/saimpkr/emetod.github.oi/tree/main/css/style.css" rel="stylesheet" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
 
-	
+  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,8 +24,7 @@
 .style1 {font-family: Arial, Helvetica, sans-serif}
 -->
 </style>
-</head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <body>
 <div id="wrapper" class="home-page"> 
 	<header class="topbar">
@@ -47,7 +43,7 @@
 				<div class="col-sm-9">
 					<div class="row">
 						<ul class="info"> 
-							<li><a class="icon-info-blocks material-icons"href="mailto:hizmetler@emetod.tr">question_answer</a><a href="mailto:hizmetler@emetod.tr">hizmetler@emetod.tr</a></li>
+							<li><a class="icon-info-blocks material-icons" href="mailto:hizmetler@emetod.tr">question_answer</a><span>hizmetler@emetod.tr</span></li>
 							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+90(532) 334 7745</span></li>
 						</ul>
 						<div class="clr"></div>
@@ -74,28 +70,38 @@
                 </div>
           <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li><a class="waves-effect waves-dark" href="index.html">emetod</a></li> 				 
-			<li><a class="waves-effect waves-dark" href="about.html">BİZ KİMİZ</a></li>
-			<li><a class="waves-effect waves-dark" href="services.html">HİZMETLERİMİZ</a></li>
+                        <li><a class="waves-effect waves-dark" href="index.html">emetod</a></li> 
+						 <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">BİZ KİMİZ? <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="waves-effect waves-dark" href="about.html">KURUMUMUZ</a></li>
+                            <li><a href="#" class="waves-effect waves-dark style1">EKİBİMİZ</a></li>
+                            <li><a class="waves-effect waves-dark" href="#">HABERLER</a></li> 
+                            <li><a class="waves-effect waves-dark" href="#">YATIRIMCILARIMIZ</a></li>
+                        </ul>
+                    </li> 
+						<li><a class="waves-effect waves-dark" href="services.html">HİZMETLERİMİZ</a></li>
                         <li><a class="waves-effect waves-dark" href="portfolio.html">GALERİ</a></li>
-                        <li class="active"><a class="waves-effect waves-dark" href="sss.html">SSS</a></li> 
-			<li><a class="waves-effect waves-dark" href="contact.html">İLETİŞİM</a></li>
+                        <li class="active"><a class="waves-effect waves-dark" href="sss.html">SSS</a></li>
+                        <li><a class="waves-effect waves-dark" href="contact.html">İLETİŞİM</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-	</header>
+	</header><br>
 	<!-- end header -->
-
-<section id="inner-headline">
+<section  id="inner-headline">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
+			<div class="row">
+			<div class="col-ld-1">
 				<h2 class="pageTitle">SIK SORULAN SORULAR VE YANITLARIMIZ</h2>
 			</div>
 		</div>
 	</div>
 </section><br>
+	
+
+	
 <div class="about home-about">
 <div class="container">
 <div class="row">
@@ -107,7 +113,7 @@
 		<div class="s13">
 		<ul class="tabs">
 		<li class="tab col s2"><a href="#test1" class="waves-effect waves-dark">Eğitim</a></li>
-		<li class="tab col s2"><a href="#test2" class="waves-effect waves-dark">Enerji Yöneticiliği</a></li>
+		<li class="tab col s2"><a class="waves-effect waves-dark active" href="#test2">Enerji Yöneticisi</a></li>
 		<li class="tab col s2"><a href="#test3" class="waves-effect waves-dark">Bina Enerji Kimlik Belgesi</a></li> 
 		<li class="tab col s2"><a href="#test4" class="waves-effect waves-dark">Yenilenebilir Enerji</a></li> 
 		<li class="tab col s2"><a href="#test5" class="waves-effect waves-dark">Ayak İzi Raporlama</a></li> 
@@ -115,42 +121,43 @@
 		</ul>
 		</div>
 
-<!-- Eğitim Accordion starts -->
+		<div id="test1" class="col s12 container">
+		<h3><span>Lütfen yukarıdaki sekmelerden ilgi alanınıza uygun kütüphane ve açıklama seçiminizi yapınız.</span></h3>
+		<!-- Eğitim Accordion starts -->
+	    <ul class="collapsible" id="accordionSection" data-collapsible="accordion">
+	
+		<li>
+		  <div class="collapsible-header active"><i class="material-icons">question_answer</i>Eğitim tasarımlarınızı kurumsal taleplere uygun yapılandırıyor musunuz?</div>
+		  <div class="collapsible-body"><p>Evet. Eğtim tasarlanmadan önce beklentilerinizi ve eğitim kazanımlarınızı belirliyor ve öngördüğünüz süre içinde başarılı bir eğitim gerçekleşip gerçekleşemeyeceğni analiz ediyoruz. Kazanımların sağlanamayacağı endişemiz olduğunda sizlerle paylaşarak iyileştirmeler yapmayı tercih ediyoruz.</p></div>
+		</li>
+	
+		<li>
+		  <div class="collapsible-header"><i class="material-icons">question_answer</i>Eğtimlerde oyunlara, dramalara yer veriyormusunuz?</div>
+		  <div class="collapsible-body"><p>Eğitimin süresine bağlı olarak tasarımlarda oyunlara ve dramalara yer vermek önceliğiimizdir.</p></div>
+		</li>
+	
+		<li>
+		  <div class="collapsible-header"><i class="material-icons">question_answer</i>Değerlendirme ölçeğinizi var mı?</div>
+		  <div class="collapsible-body"><p>Başarı ve katılımcı sınıflandırması gerektiğinde ölçek hazırlanmaktadır. Eğtimin türüne göre klasik, çoktan seçmeli, doğru/yanlış biçiminde sorular yöneltilmektedir?</p></di>
+		</li>
+ 
+		<li>
+		  <div class="collapsible-header"><i class="material-icons">question_answer</i>Sınavlarını yüzyüze mi? Uzaktan eğtimlerde sınavlarda uzaktan yapılıyor mu?<br></div>
+		  <div class="collapsible-body"><p>Sınavların yüz yüze yapılması tercihimizdir. Bizim tarafımızdan yapılabileceği gibi İnsan kayanakları tarafından da yapılabilir. İstendiğinde Uzaktan sınavlarda yapılmaktadır.</p></div>
+		</li>
+
+		<li>
+		  <div class="collapsible-header"><i class="material-icons">question_answer</i>Eğitim sertifikamı kaybettim yeniden çıkartabilir miyim?<br></div>
+		  <div class="collapsible-body"><p>Evet. Eğitimi kurum araclığı ile katılmış ise sertifikanızı kurum aracılığı ile talep etmelisiniz. Doğrudan talep etmeniz durumunda, kurum kayıtlarımızdaki bilgileriniz doğrulanmak şartıyla bedeli karşılığı sertifika alabilirsiniz.</p></div>
+		</li>
+       
+	    </ul>
+	  	<!-- Eğitim Raporlama Accordion ends -->
+		</div><br>
+ 		
 		
-<div id="test1" class="col s12 container">
-<h3><span>Eğitim</span></h3>
-	
-	<p> <a href="#myCollapse" data-bs-toggle="collapse">1.Eğitim tasarımlarınızı kurumsal taleplere uygun yapılandırıyor musunuz?</a> </p>
-    	<div class="collapse show" id="myCollapse">
-        	<div class="card card-body">Evet. Eğtim tasarlanmadan önce beklentilerinizi ve eğitim kazanımlarınızı belirliyor ve öngördüğünüz süre içinde başarılı bir eğitim gerçekleşip gerçekleşemeyeceğni analiz ediyoruz. Kazanımların sağlanamayacağı endişemiz olduğunda sizlerle paylaşarak iyileştirmeler yapmayı tercih ediyoruz.</div>
-    	</div>
-	
-	<p> <a href="#myCollapse" data-bs-toggle="collapse">2.Eğtimlerde oyunlara, dramalara yer veriyormusunuz?</a> </p>
-    	<div class="collapse show" id="myCollapse">
-        	<div class="card card-body">Eğitimin süresine bağlı olarak tasarımlarda oyunlara ve dramalara yer vermek önceliğiimizdir.</div>
-    	</div>
-	
-	<p> <a href="#myCollapse" data-bs-toggle="collapse">3.Değerlendirme ölçeğinizi var mı?</a> </p>
-    	<div class="collapse show" id="myCollapse">
-        	<div class="card card-body">Başarı ve katılımcı sınıflandırması gerektiğinde ölçek hazırlanmaktadır. Eğtimin türüne göre klasik, çoktan seçmeli, doğru/yanlış biçiminde sorular yöneltilmektedir.</div>
-    	</div>
-
-	<p> <a href="#myCollapse" data-bs-toggle="collapse">4.Sınavlarını yüzyüze mi? Uzaktan eğtimlerde sınavlarda uzaktan yapılıyor mu?</a> </p>
-    	<div class="collapse show" id="myCollapse">
-        	<div class="card card-body">Sınavların yüz yüze yapılması tercihimizdir. Bizim tarafımızdan yapılabileceği gibi İnsan kayanakları tarafından da yapılabilir. İstendiğinde Uzaktan sınavlarda yapılmaktadır.</div>
-    	</div>
-
-	<p> <a href="#myCollapse" data-bs-toggle="collapse">5.Eğitim sertifikamı kaybettim yeniden çıkartabilir miyim?</a> </p>
-    	<div class="collapse show" id="myCollapse">
-        	<div class="card card-body">Evet. Eğitimi kurum araclığı ile katılmış ise sertifikanızı kurum aracılığı ile talep etmelisiniz. Doğrudan talep etmeniz durumunda, kurum kayıtlarımızdaki bilgileriniz doğrulanmak şartıyla bedeli karşılığı sertifika alabilirsiniz.</div>
-    	</div>
-
-</div><br>
-
-<!-- Eğitim Raporlama Accordion ends -->
-	
-<div id="test2" class="col s12 container">
-		<h3><span>Enerji Yöneticiliği</span></h3>
+		<div id="test2" class="col s12 container">
+		<h3><span>Lütfen yukarıdaki sekmelerden ilgi alanınıza uygun kütüphane ve açıklama seçiminizi yapınız.</span></h3>
 		<!-- Accordion starts -->
 	    <ul class="collapsible" id="accordionSection" data-collapsible="accordion">
 		<li>
